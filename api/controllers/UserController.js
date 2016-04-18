@@ -8,37 +8,41 @@
 module.exports = {
 	
 
-	create : function(req,res){
+			create:function(req,res){
 
+				var params= (req.params.all()) ? req.params.all() : 'undefined';
+				
+				User.create({name :params.name}).exec(function(err,user){
+						//console.log(success);
+					if(err){
 
+						res.send("Error:Sorry!Something went Wrong");
 
-	
-		var  params= (req.body.name) ?  req.body.name : undefined
+					}else{
 
+						return res.redirect("/user");
 
-		User.create({name: params.name}).exec(function UserList(err,created){
-
-				return res.json({
-
-					notice: 'Created user with name'+created.name
+					}
 
 				});
 
-		});
-       
-}
-}
 
+}
+};
 /*
 
-		User.create({name:params.name}).exec(function createCB(err,created){
-			console.log(created);
-			return res.json({
+	//WITh SERVICE
 
-				notice: 'Created user with name '+created.name
+		create:function(req,res){
 
-			});
+				var params=(req.params.all()) ? req.params.all() : 'undefined'
+				
+				ServiceCreate.addUser(params,function(success){
+						//console.log(success);
+					res.json(success);
 
-		});
+				});
+
+	
 */
 	

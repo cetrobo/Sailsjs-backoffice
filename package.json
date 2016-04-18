@@ -34,5 +34,8 @@
     "url": "git://github.com/anonymous node/sails user/cruds.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
 }
