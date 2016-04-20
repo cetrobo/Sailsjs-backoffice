@@ -1,4 +1,4 @@
-/**
+	/**
  * UserController
  *
  * @description :: Server-side logic for managing users
@@ -6,43 +6,22 @@
  */
 
 module.exports = {
+
 	
+			
 
-			create:function(req,res){
-
-				var params= (req.params.all()) ? req.params.all() : 'undefined';
-				
-				User.create({name :params.name}).exec(function(err,user){
-						//console.log(success);
-					if(err){
-
-						res.send("Error:Sorry!Something went Wrong");
-
-					}else{
-
-						return res.redirect("/user");
-
-					}
-
-				});
-
-
-}
-};
 /*
+				create:function(req,res){
 
-	//WITh SERVICE
-
-		create:function(req,res){
-
-				var params=(req.params.all()) ? req.params.all() : 'undefined'
+				var params=(req.body) ? req.body : 'undefined'
 				
-				ServiceCreate.addUser(params,function(success){
+				ServiceUser.addUser(params,function(success){
 						//console.log(success);
 					res.json(success);
 
 				});
-
-	
+}
 */
+};
+
 	

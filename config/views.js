@@ -77,7 +77,6 @@ module.exports.views = {
 
   //layout: 'layout',
   layout:'user',
-  layout:'done',
 
   /****************************************************************************
   *                                                                           *
