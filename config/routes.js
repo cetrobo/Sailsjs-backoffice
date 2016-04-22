@@ -47,5 +47,4 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
     
-  'post /user':   'UserController.create'
 };
