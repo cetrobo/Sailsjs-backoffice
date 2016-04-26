@@ -37,7 +37,9 @@
   "author": "anonymous node/sails user",
   "license": "",
   "devDependencies": {
-    "jade": "^1.11.0",
-    "json-web-token": "^2.0.2"
-  }
+    
+  },
+  "engines": {
+  "node": "4.4.3"
+}
 }
