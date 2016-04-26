@@ -74,10 +74,10 @@ module.exports.connections = {
     database: 'crud'
 },
 
-productionMongoHqDb: {
-  adapter: 'sails-mongo',
-  url: process.env.MONGODB_URI
-},
+  productionMongoHqDb: {
+    adapter: 'sails-mongo',
+    url: process.env.MONGODB_URI
+  },
 
   /***************************************************************************
   *                                                                          *
