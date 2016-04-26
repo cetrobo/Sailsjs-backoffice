@@ -5,6 +5,7 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "bcrypt": "*",
     "ejs": "2.3.4",
     "grunt": "0.4.5",
     "grunt-contrib-clean": "0.6.0",
@@ -20,7 +21,6 @@
     "grunt-sync": "0.2.4",
     "include-all": "~0.1.6",
     "jsonwebtoken": "*",
-    "bcrypt":"*",
     "rc": "1.0.1",
     "sails": "~0.12.3",
     "sails-disk": "~0.10.9",
@@ -37,10 +37,8 @@
   },
   "author": "anonymous node/sails user",
   "license": "",
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "engines": {
-  "node": "4.4.3"
-}
+    "node": "4.4.3"
+  }
 }
