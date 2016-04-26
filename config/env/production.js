@@ -18,8 +18,8 @@ module.exports = {
    ***************************************************************************/
 
    models: {
-    connection: 'productionMongoHqDb',
-   },
+    connection: 'productionMongolab'
+   }
 
   /***************************************************************************
    * Set the port in the production environment to 80                        *
