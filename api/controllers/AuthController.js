@@ -4,15 +4,14 @@
  * @description :: Server-side logic for managing auths
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
+
 module.exports = {
   index: function (req, res) {
-
-    sails.log.debug('here');
-    
+  	//console.log(req);
+  	//return;
     var email = req.param('email');
     var password = req.param('password');
 
-    
     if (!email || !password) {
       return res.json(401, {err: 'email and password required'});
     }
@@ -26,10 +25,12 @@ module.exports = {
         if (err) {
           return res.json(403, {err: 'forbidden'});
         }
-
+        console.log(valid);
         if (!valid) {
           return res.json(401, {err: 'invalid email or password'});
         } else {
+          //console.log("done");
+          
           res.json({
             user: user,
             token: jwToken.issue({id : user.id })

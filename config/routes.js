@@ -37,6 +37,8 @@ module.exports.routes = {
 
   },
 
+ 'get /auth': 'AuthController.index',
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

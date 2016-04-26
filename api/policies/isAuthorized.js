@@ -3,9 +3,12 @@ module.exports = function (req, res, next) {
 
   if (req.headers && req.headers.authorization) {
     var parts = req.headers.authorization.split(' ');
+    //console.log("value parts",parts); // get token
     if (parts.length == 2) {
       var scheme = parts[0],
+        //console.log("value sheme",scheme);
         credentials = parts[1];
+        //console.log("value sheme",scheme);
 
       if (/^Bearer$/i.test(scheme)) {
         token = credentials;
