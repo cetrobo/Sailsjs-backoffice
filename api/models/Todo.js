@@ -8,7 +8,11 @@
 module.exports = {
 
   attributes: {
-  	message:"String"
+  	id:Number,
+  	titre:"String",
+  	message:"String",
+  	completed:false
+
   }
 };
 
