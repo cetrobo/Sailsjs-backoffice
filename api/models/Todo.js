@@ -8,7 +8,6 @@
 module.exports = {
 
   attributes: {
-  	id:Number,
   	titre:"String",
   	message:"String",
   	completed:false
