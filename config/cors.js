@@ -47,7 +47,10 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  origin: '*',
+
+  allRoutes: true,
+  origin: require('./local.js').hosts, // this is 'http://localhost',
+  securityLevel: 1
 
   /***************************************************************************
   *                                                                          *
