@@ -33,27 +33,6 @@ module.exports = function (req, res, next) {
   });
 
 
-else if (req.socket && req.socket.handshake && req.socket.handshake.query && req.socket.handshake.query.token) {
 
-    token = req.socket.handshake.query.token;
-
-} else {
-    sails.log(req.socket.handshake);
-    return res.json(401, {err: 'No Authorization header was found'});
-}
-
-JWTService.verifyToken(token, function (err, token) {
-
-    if (err) {
-        return res.json(401, {err: 'The token is not valid'});
-    }
-
-    sails.log('Token valid');
-
-    req.token = token;
-
-    return next();
-
-});
 
 };
