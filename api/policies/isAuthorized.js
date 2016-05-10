@@ -32,7 +32,7 @@ module.exports = function (req, res, next) {
     next();
   });
 
-  If connection from socket
+  
 else if (req.socket && req.socket.handshake && req.socket.handshake.query && req.socket.handshake.query.token) {
 
     token = req.socket.handshake.query.token;
@@ -56,5 +56,4 @@ JWTService.verifyToken(token, function (err, token) {
 
 });
 
-};
 };
