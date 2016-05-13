@@ -4,6 +4,7 @@ var
 
 // Generates a token from supplied payload
 module.exports.issue = function(payload) {
+  
   return jwt.sign(
     payload,
     tokenSecret, // Token Secret that we sign it with

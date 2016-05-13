@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
   	titre:"String",
   	message:"String",
-  	completed:false
+  	completed:Boolean
 
   }
 };
